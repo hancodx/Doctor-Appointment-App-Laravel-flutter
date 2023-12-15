@@ -1,0 +1,1 @@
+This mobile application, developed using Flutter for the front-end and Laravel for the back-end, serves as a comprehensive solution for scheduling medical appointments. The primary aim of the application is to streamline the process of booking appointments with healthcare professionals, enhancing the overall experience for both patients and medical practitioners.
