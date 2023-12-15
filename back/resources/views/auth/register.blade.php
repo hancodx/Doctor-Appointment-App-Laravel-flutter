@@ -10,7 +10,6 @@
             @csrf
 
             <div>
-                <h2>Name</h2>
                 <x-label for="name" value="{{ __('Name') }}" />
                 <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
@@ -30,17 +29,19 @@
                 <x-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
+
+
+
             <div class="mt-4">
                 <x-label for="password_confirmation" value="{{ __('User type') }}" />
-
-                <select name="type" id="type" class="block mt-1 w-full">
-                    <option value="" selected disabled hidden>{{ __('Choose User Type ') }}</option>
-                    <option value="doctor" >Doctor</option>
-                    <option value="user" >User</option>
-
+                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected disabled hidden>{{ __('Choose User Type ') }}</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="user">User</option>
                 </select>
-
             </div>
+
+
 
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
